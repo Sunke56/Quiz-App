@@ -15,6 +15,7 @@ public class Quiz {
     private String title;
 
     @ManyToMany
+//    @JoinColumn(name = "id")
     private List<Question> questions;
 
 }
