@@ -28,7 +28,9 @@ public class QuestionController {
 
     @GetMapping("/getting/{id}")
     public List<Question> getByQueGreterThanId(@PathVariable Integer id){
+        System.out.println("This is data get by Question greater than Id");
         return questionService.getByQuesGreterId(id);
+
     }
 
     @GetMapping("/cate/{category}")
